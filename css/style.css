@@ -196,6 +196,7 @@ button[type=submit] {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+
 }
 
 .hebergements-title {
@@ -204,15 +205,18 @@ button[type=submit] {
     align-items: center;
 }
 
+
+
 .hebergements-cards .card {
     display: flex;
+    flex-direction: column;
     margin-top: 33px;
     width: 237px;
 }
 
 .hebergements-cards img {
-    width: 236px;
-    height: 124px;
+    width: 100%;
+    height: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: fill;
