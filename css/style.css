@@ -173,11 +173,13 @@ button[type=submit] {
 }
 
 .fa-info {
-    border: 1px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 25px;
     width: 24px;
     height: 24px;
-    margin-left: 5px;
+    flex-shrink: 0;
+    margin-left: 15px;
+    display:flex;
 }
 
 /****** Hebergements And Populaires ***********/
