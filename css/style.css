@@ -170,16 +170,22 @@ button[type=submit] {
     gap: 11px;
     margin: 37px;
     margin-left: 5px;
+    vertical-align: middle;
 }
 
-.fa-info {
+.info-border{
     border: 2px solid #F2F2F2;
     border-radius: 25px;
     width: 24px;
     height: 24px;
+    display: flex;
+    justify-content: center;
+    margin: bottom 0;
+
+}
+
+.fa-info {
     flex-shrink: 0;
-    margin-left: 15px;
-    display:flex;
 }
 
 /****** Hebergements And Populaires ***********/
