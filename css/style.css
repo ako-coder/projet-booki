@@ -109,7 +109,7 @@ nav {
 
 h2, 
 p {
-    margin: 4px;
+    margin: 8px;
 }
 
 .fa-location-dot {
@@ -438,6 +438,7 @@ ul {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
 }
 
 /* Small devices (phones, less than 768px) */
