@@ -263,7 +263,7 @@ button[type=submit] {
     flex-direction: column;
     margin-top: 33px;
     width: 246px;
-    height: 199px;
+    /*height: 199px;*/
 }
 
 .hebergements-cards img {
@@ -290,6 +290,7 @@ button[type=submit] {
 .hebergements-cards .card-subtitle {
     margin: 0;
     padding-left: 10px;
+    margin-bottom: 5px;
 }
 
 .hebergements-cards .card-rating {
