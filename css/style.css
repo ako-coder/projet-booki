@@ -209,7 +209,10 @@ button[type=submit] {
     flex-direction: row;
     gap: 11px;
     margin: 37px;
-    margin-left: 5px;    
+    margin-left: 5px;
+    /* Aligner les deux éléments ensemble */
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .info-border {
