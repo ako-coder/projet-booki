@@ -284,17 +284,20 @@ button[type=submit] {
     margin-top: 10px;
     margin-bottom: 4px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .hebergements-cards .card-subtitle {
     margin: 0;
     padding-left: 10px;
     margin-bottom: 5px;
+    padding-right: 10px;
 }
 
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 /****** Populaires ***********/
@@ -379,6 +382,7 @@ button[type=submit] {
 
 .activites-cards .card-title {
     padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 15px;
 }
 
