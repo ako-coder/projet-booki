@@ -55,10 +55,6 @@ body {
     object-fit: cover;
 }
 
-.card-title {
-    font-size: 16px;
-}
-
 .euro {
     font-weight: 700;
 }
@@ -370,7 +366,7 @@ button[type=submit] {
     flex-direction: column;
     margin-top: 33px;
     width: 302px;
-    height: 445px;
+    /*height: 445px;*/
     padding: none;
 }
 
@@ -383,6 +379,7 @@ button[type=submit] {
 
 .activites-cards .card-title {
     padding-left: 15px;
+    margin-bottom: 15px;
 }
 
 /**** Foooter ******/
