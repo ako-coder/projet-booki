@@ -197,7 +197,20 @@ button[type=submit] {
 }
 
 .filtres-button:hover {
+    animation: pop 1000ms;
     background-color: #DEEBFF;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(1)
+    }
+    40% {
+        transform: scale(1.2)
+    }
+    100% {
+        transform: scale(1.1)
+    }
 }
 
 .filtres4 {
