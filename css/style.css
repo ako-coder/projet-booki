@@ -493,9 +493,9 @@ ul {
         font-size: 13px;
     }
 
-    .activites-cards img {        
-        height: 210px;        
-    }    
+    .activites-cards img {
+        height: 210px;
+    }
 
     .footer-menu {
         gap: 10%;
@@ -506,4 +506,53 @@ ul {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-bottom: 50px;
+    }
+
+    .menu {
+        justify-content: space-between;
+    }
+
+    .menu1,
+    .menu2 {
+        border-bottom: solid var(--main-bg-color);
+        padding-bottom: 18px;
+    }
+
+    .menu1:hover,
+    .menu2:hover {
+        color: var(--main-color);
+        border-bottom: solid;
+        border-top: none;
+    }
+
+    .rechercher {
+        display: none;
+    }
+
+    .loupe {
+        display: block;
+    }
+
+    .recherche {
+        margin-top: 38px;
+    }
+
+    .filtres {
+        flex-direction: column;
+    }
+
+    .filtres1 {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
 }
