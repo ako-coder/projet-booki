@@ -431,6 +431,11 @@ button[type=submit] {
 
 /**** Foooter ******/
 
+h3 {
+    margin: 4px;
+    margin-left: 0px;
+}
+
 footer {
     background-color: var(--main-bg-color);
 }
@@ -445,10 +450,10 @@ ul {
     display: flex;
     flex-direction: row;
     padding-left: 70px;
-    padding-top: 45px;
-    padding-bottom: 58px;
+    padding-top: 38px;
+    padding-bottom: 35px;
     padding-right: 70px;
-    gap: 20%;
+    gap: 17%;
 }
 
 
@@ -486,6 +491,10 @@ ul {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .footer-menu {
+        gap: 10.2%;
     }
 
 }
