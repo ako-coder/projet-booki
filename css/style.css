@@ -493,8 +493,12 @@ ul {
         font-size: 13px;
     }
 
+    .activites-cards img {        
+        height: 210px;        
+    }    
+
     .footer-menu {
-        gap: 10.2%;
+        gap: 10%;
     }
 
 }
