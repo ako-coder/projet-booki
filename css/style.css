@@ -37,7 +37,8 @@ body {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card img {
+.card img,
+.card2 img {  /*--- ajout de nouveau type de cartes pour Activités à Marseille ---*/
     object-fit: cover;
 }
 
@@ -49,10 +50,6 @@ body {
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card2 img {
-    object-fit: cover;
 }
 
 .euro {
@@ -85,11 +82,6 @@ nav {
 .menu1,
 .menu2 {
     color: black;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
     text-decoration: none;
     padding: 33px;
 }
@@ -278,7 +270,7 @@ button[type=submit] {
 }
 
 .hebergements-and-populaires section {
-    
+    /*--- backdground-color enlevée pour les besoins de la version mobile ---*/
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
