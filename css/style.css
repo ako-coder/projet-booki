@@ -539,6 +539,10 @@ ul {
         border-top: none;
     }
 
+    .trouvez {
+        padding: 20px;
+    }
+
     .rechercher {
         display: none;
     }
@@ -553,7 +557,7 @@ ul {
 
     .filtres {
         flex-direction: column;
-        gap: 0px;        
+        gap: 0px;               
     }
 
     .filtres1 {
