@@ -417,7 +417,7 @@ button[type=submit] {
     margin-top: 33px;
     width: 302px;
     /*height: 445px;*/
-    padding: none;
+    padding: 0;
 }
 
 .activites-cards img {
@@ -607,8 +607,8 @@ ul {
     }
 
     .populaires {
-        order: 1;        margin-top: 0;
-        
+        order: 1;        
+        margin-top: 0;
     }
 
     .populaires-cards {
