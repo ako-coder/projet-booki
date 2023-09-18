@@ -80,8 +80,8 @@ nav {
     flex-direction: row;
 }
 
-.menu1,
-.menu2 {    
+.menu1 a,
+.menu2 a {    
     color: black;
     text-decoration: none;
     padding: 33px;
@@ -91,7 +91,7 @@ nav {
 .menu2:hover {
     color: var(--main-color);
     border-top: solid;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 
 /****** Formulaire *****/
