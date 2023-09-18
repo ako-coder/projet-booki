@@ -27,6 +27,7 @@ body {
 
 .section-title {
     margin: 0;
+    padding: 0;
     font-size: 22px;
 }
 
@@ -37,7 +38,8 @@ body {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card img {
+.card img,
+.card2 img {  /*--- ajout de nouveau type de cartes pour Activités à Marseille ---*/
     object-fit: cover;
 }
 
@@ -51,10 +53,6 @@ body {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card2 img {
-    object-fit: cover;
-}
-
 .euro {
     font-weight: 700;
 }
@@ -63,7 +61,7 @@ body {
     color: var(--main-bg-color)
 }
 
-/****** Header ******/
+/****** Nav ******/
 
 nav {
     display: flex;
@@ -83,13 +81,8 @@ nav {
 }
 
 .menu1,
-.menu2 {
+.menu2 {    
     color: black;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
     text-decoration: none;
     padding: 33px;
 }
@@ -186,15 +179,13 @@ button[type=submit] {
 
 .filtres-button {
     display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
     margin: auto;
     padding: 12px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     gap: 10px;
     flex-shrink: 0;
-
+    
     /* Appliquer les animations au bouton .filtres-button */
     transition: background-color 1s;
 }
@@ -250,7 +241,7 @@ button[type=submit] {
     margin: 37px;
     margin-left: 5px;
     /* Aligner les deux éléments ensemble */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;*/
     align-items: center;
 }
 
@@ -261,6 +252,7 @@ button[type=submit] {
     height: 22px;
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .fa-info {
@@ -278,7 +270,7 @@ button[type=submit] {
 }
 
 .hebergements-and-populaires section {
-    
+    /*--- backdground-color enlevée pour les besoins de la version mobile ---*/
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -287,7 +279,11 @@ button[type=submit] {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-color);    
+}
+
+.hebergements-title {
+    margin-top: 12px;
 }
 
 .ligne1,
@@ -299,14 +295,14 @@ button[type=submit] {
 
 .afficher-plus {
     margin-top: 40px;
+    margin-bottom: 16px;
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    margin-top: 33px;
+    margin-top: 24px;
     width: 246px;
-    /*height: 199px;*/
 }
 
 .hebergements-cards img {
@@ -325,7 +321,7 @@ button[type=submit] {
 }
 
 .hebergements-cards .card-title {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 4px;
     padding-left: 10px;
     padding-right: 10px;
@@ -336,6 +332,7 @@ button[type=submit] {
     padding-left: 10px;
     margin-bottom: 5px;
     padding-right: 10px;
+    font-size: 14px;
 }
 
 .hebergements-cards .card-rating {
@@ -395,8 +392,8 @@ button[type=submit] {
 .activites {
     display: flex;
     flex-direction: column;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .activites section {
@@ -406,7 +403,7 @@ button[type=submit] {
 .activites-cards {
     display: flex;
     flex-direction: row;
-    gap: 43px;
+    gap: 43px;    
 }
 
 .activites-cards .card2 {
@@ -426,9 +423,9 @@ button[type=submit] {
 }
 
 .activites-cards .card-title {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-bottom: 15px;
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    margin: 15px;
 }
 
 /**** Foooter ******/
@@ -510,35 +507,40 @@ ul {
     /* ... */
 
     nav {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column;        
         margin-top: 10px;
+    }
+
+    .log0 {
+        align-self: center;
     }
 
     .logo {
         margin-bottom: 45px;
     }
 
-    /*.menu {
-        justify-content: space-between;
-    }*/
-
-    .menu1,
-    .menu2 {
-        border-bottom: solid var(--main-bg-color);
-        padding-bottom: 18px;
+    .menu {
+        justify-content: space-around;
     }
 
-    /*.menu2 {
-        padding-left: 50px;
-        padding-right: 50px;
-    }*/
+    .menu1,
+    .menu2 {      
+        border-bottom: solid var(--main-bg-color);
+        padding-bottom: 18px;        
+        width: 50%;
+        flex-basis: 50%;
+        text-align: center;      
+    }
 
     .menu1:hover,
     .menu2:hover {
         color: var(--main-color);
         border-bottom: solid;
         border-top: none;
+    }
+
+    .trouvez {
+        padding: 20px;
     }
 
     .rechercher {
@@ -555,7 +557,7 @@ ul {
 
     .filtres {
         flex-direction: column;
-        gap: 0px;
+        gap: 0px;               
     }
 
     .filtres1 {
@@ -573,6 +575,8 @@ ul {
 
     .filtres-button {
         width: 140px;
+        align-content: center;
+        flex-wrap: wrap;
     }
 
     .fb-txt {
@@ -586,12 +590,15 @@ ul {
         font-size: 20px;
     }
 
-    .filtres4 {}
-
     .hebergements-and-populaires section {
         border-radius: 0;
         padding: 20px;
         box-sizing: border-box;
+    }
+
+    .populaires {
+        order: 1;
+        margin-top: 0;
     }
 
     .populaires-cards {
@@ -603,26 +610,58 @@ ul {
     }
 
     .hebergements {
+        order: 2;
         background-color: unset;
     }
 
     .hebergements .card {
-        width: 100%;
+        width: 95%;
     }
 
     .ligne1,
     .ligne2 {
         flex-direction: column;
+        gap: 0;
     }
 
+    .afficher-plus {
+        display: none;
+    }
+
+    .activites-title {
+        padding-left: 20px;
+    }
+    
     .activites-cards {
         flex-direction: column;
+        gap: 0;
+        padding-left: 20px;
+    }
+
+    .activites-cards .card2 {
+        width: 95%;               
+    }
+
+    .activites-cards img {
+        height: 135px;
+    }
+
+    .activites-cards .card-title {
+        margin-top: 15px;
+        margin-bottom: 15px;        
     }
 
     .footer-menu {
         flex-direction: column;
         margin-left: 0;
         padding-left: 35px;
+        gap: 12px;        
     }
 
+}
+
+@media (max-width: 568px) {
+    .filtres4 {
+        align-items: flex-start;
+    }
 }
