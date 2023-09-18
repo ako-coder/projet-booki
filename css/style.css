@@ -417,7 +417,7 @@ button[type=submit] {
     margin-top: 33px;
     width: 302px;
     /*height: 445px;*/
-    padding: none;
+    padding: 0;
 }
 
 .activites-cards img {
