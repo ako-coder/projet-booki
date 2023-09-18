@@ -81,7 +81,7 @@ nav {
 }
 
 .menu1,
-.menu2 {
+.menu2 {    
     color: black;
     text-decoration: none;
     padding: 33px;
@@ -519,17 +519,17 @@ ul {
         margin-bottom: 45px;
     }
 
-    .menu {    
-        justify-content: space-evenly;
+    .menu {
+        justify-content: space-around;
     }
 
     .menu1,
-    .menu2 {        
+    .menu2 {      
         border-bottom: solid var(--main-bg-color);
-        padding-bottom: 18px;
+        padding-bottom: 18px;        
         width: 50%;
         flex-basis: 50%;
-        text-align: center;
+        text-align: center;      
     }
 
     .menu1:hover,
@@ -598,6 +598,7 @@ ul {
 
     .populaires {
         order: 1;
+        margin-top: 0;
     }
 
     .populaires-cards {
@@ -620,6 +621,11 @@ ul {
     .ligne1,
     .ligne2 {
         flex-direction: column;
+        gap: 0;
+    }
+
+    .afficher-plus {
+        display: none;
     }
 
     .activites-title {
