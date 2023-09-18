@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin-top: 0;
 }
 
 :root {
@@ -18,7 +19,7 @@ body {
     justify-content: center;
 }
 
-.main-container {
+.main-container {    
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
@@ -66,8 +67,9 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    margin-top: 44px;
-    margin-bottom: 53px;
+    align-items: center;
+    margin-top: 0;    
+    margin-bottom: 25px;
 }
 
 .logo {
@@ -80,18 +82,21 @@ nav {
     flex-direction: row;
 }
 
-.menu1,
-.menu2 {    
-    color: black;
+a {
     text-decoration: none;
-    padding: 33px;
+    color: black;
+}
+
+.menu1,
+.menu2 {
+    padding: 40px;
+    border-top: solid white;
 }
 
 .menu1:hover,
 .menu2:hover {
     color: var(--main-color);
-    border-top: solid;
-    padding-top: 50px;
+    border-top-color: var(--main-color);
 }
 
 /****** Formulaire *****/
@@ -505,31 +510,31 @@ ul {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    
+    .main-container {
+        margin-top: 18px;
+        padding: 0px 0px;
+    }
 
     nav {
-        flex-direction: column;        
-        margin-top: 10px;
+        flex-direction: column;       
     }
 
     .log0 {
         align-self: center;
     }
 
-    .logo {
-        margin-bottom: 45px;
-    }
-
     .menu {
-        justify-content: space-around;
+        display: flex;
     }
 
     .menu1,
-    .menu2 {      
+    .menu2 {
+        border-top: none;
         border-bottom: solid var(--main-bg-color);
-        padding-bottom: 18px;        
-        width: 50%;
-        flex-basis: 50%;
-        text-align: center;      
+        width: 100%;
+        padding-bottom: 18px;
+        text-align: center; /* Centrer le texte */
     }
 
     .menu1:hover,
@@ -540,7 +545,12 @@ ul {
     }
 
     .trouvez {
-        padding: 20px;
+        padding: 0px 20px;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     .rechercher {
@@ -597,8 +607,8 @@ ul {
     }
 
     .populaires {
-        order: 1;
-        margin-top: 0;
+        order: 1;        margin-top: 0;
+        
     }
 
     .populaires-cards {
