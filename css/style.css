@@ -66,8 +66,8 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    margin-top: 44px;
-    margin-bottom: 53px;
+    align-items: center;    
+    margin-bottom: 25px;
 }
 
 .logo {
@@ -80,18 +80,22 @@ nav {
     flex-direction: row;
 }
 
+.menu1,
+.menu2 {
+    color: black;
+    padding: 33px;
+    border-top: solid white;
+}
+
 .menu1 a,
 .menu2 a {    
-    color: black;
     text-decoration: none;
-    padding: 33px;
 }
 
 .menu1:hover,
 .menu2:hover {
     color: var(--main-color);
-    border-top: solid;
-    /*padding-top: 50px;*/
+    border-top: solid;    
 }
 
 /****** Formulaire *****/
@@ -506,6 +510,10 @@ ul {
 @media (max-width: 767.98px) {
     /* ... */
 
+    .main-container {
+        padding: 0px 0px;
+    }
+
     nav {
         flex-direction: column;        
         margin-top: 10px;
@@ -527,9 +535,14 @@ ul {
     .menu2 {      
         border-bottom: solid var(--main-bg-color);
         padding-bottom: 18px;        
-        width: 50%;
-        flex-basis: 50%;
-        text-align: center;      
+        width: 100%;        
+        justify-content: center;
+        display: flex;      
+    }
+
+    .menu1 a,
+    .menu2 a {
+        padding: 0;
     }
 
     .menu1:hover,
@@ -540,7 +553,12 @@ ul {
     }
 
     .trouvez {
-        padding: 20px;
+        padding: 0px 20px;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     .rechercher {
@@ -597,8 +615,8 @@ ul {
     }
 
     .populaires {
-        order: 1;
-        margin-top: 0;
+        order: 1;        margin-top: 0;
+        
     }
 
     .populaires-cards {
