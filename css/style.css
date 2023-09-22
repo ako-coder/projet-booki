@@ -466,6 +466,11 @@ ul {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .filtres {
+       flex-wrap: wrap;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -524,24 +529,36 @@ ul {
         align-self: center;
     }
 
-    .menu {
-        display: flex;
-    }
-
     .menu1,
     .menu2 {
-        border-top: none;
-        border-bottom: solid var(--main-bg-color);
-        width: 100%;
-        padding-bottom: 18px;
-        text-align: center; /* Centrer le texte */
+        display: none;        
     }
 
-    .menu1:hover,
-    .menu2:hover {
+    .mmenu {
+        display: flex;
+        flex-direction: row;        
+    }
+
+    .mmenu1,
+    .mmenu2 {
+        width: 50%;
+        text-align: center;
+        border-bottom: solid var(--main-bg-color);
+        padding-bottom: 21px;
+        margin-bottom: 21px;
+        margin-top: 21px;
+    }
+
+    .mmenu1:hover,
+    .mmenu2:hover {
         color: var(--main-color);
-        border-bottom: solid;
-        border-top: none;
+        border-color: var(--main-color);
+    }
+
+    .mmenu1 a:hover,
+    .mmenu2 a:hover {
+        color: var(--main-color);
+        border-color: var(--main-color);
     }
 
     .trouvez {
@@ -581,6 +598,11 @@ ul {
         margin-top: 0;
         padding-top: 0;
         margin-bottom: 15px;
+        gap: 15px;
+    }
+
+    .filtres3 {
+        gap: 15px;
     }
 
     .filtres-button {
@@ -673,5 +695,12 @@ ul {
 @media (max-width: 568px) {
     .filtres4 {
         align-items: flex-start;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .mmenu1,
+    .mmenu2 {
+        display: none;
     }
 }
