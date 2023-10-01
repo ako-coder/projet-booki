@@ -476,6 +476,9 @@ ul {
     gap: 17%;
 }
 
+.footer-menu h3 {
+    margin-bottom: 15px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
