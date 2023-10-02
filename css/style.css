@@ -100,6 +100,11 @@ a {
     border-top-color: var(--main-color);
 }
 
+.mmenu1,
+.mmenu2 {
+    display: none;
+}
+
 /****** Formulaire *****/
 
 h2,
@@ -573,6 +578,7 @@ ul {
         display: none;
     }
 
+    
     .mmenu {
         display: flex;
         flex-direction: row;
@@ -580,6 +586,8 @@ ul {
 
     .mmenu1,
     .mmenu2 {
+        display: flex;        
+        justify-content: center;
         width: 50%;
         text-align: center;
         border-bottom: solid var(--main-bg-color);
@@ -746,16 +754,16 @@ ul {
 
 }
 
-@media (max-width: 568px) {
+/*@media (max-width: 568px) {
     .filtres4 {
         align-items: flex-start;
     }
-}
+}*/
 
-@media (min-width: 767.98px) {
+/*@media (min-width: 767.98px) {
 
     .mmenu1,
     .mmenu2 {
         display: none;
     }
-}
+}*/
