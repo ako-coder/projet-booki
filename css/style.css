@@ -100,6 +100,11 @@ a {
     border-top-color: var(--main-color);
 }
 
+.mmenu1,
+.mmenu2 {
+    display: none;
+}
+
 /****** Formulaire *****/
 
 h2,
@@ -366,6 +371,10 @@ a.fill-div {
     z-index: 1;
 }
 
+.card-txt p {
+    margin: 0;
+}
+
 .populaires {
     width: 32%;
     background-color: var(--main-bg-color);
@@ -447,6 +456,22 @@ a.fill-div {
 
 .activites-cards .card-title {    
     margin: 15px;
+}
+
+.act {
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;  
+    z-index: 1;    
+    background-image: url('empty.gif');
+}
+
+.activites-title {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
 /**** Foooter ******/
@@ -553,6 +578,7 @@ ul {
         display: none;
     }
 
+    
     .mmenu {
         display: flex;
         flex-direction: row;
@@ -560,6 +586,8 @@ ul {
 
     .mmenu1,
     .mmenu2 {
+        display: flex;        
+        justify-content: center;
         width: 50%;
         text-align: center;
         border-bottom: solid var(--main-bg-color);
@@ -688,7 +716,9 @@ ul {
         display: none;
     }
 
-    .activites-title {
+    .activites-title {        
+        flex-direction: column;
+        gap: 0px; 
         padding-left: 20px;
     }
 
@@ -699,7 +729,7 @@ ul {
     }
 
     .activites-cards .card2 {
-        width: 95%;
+        width: 95%;        
     }
 
     .activites-cards img {
@@ -718,18 +748,22 @@ ul {
         gap: 12px;
     }
 
+    .activites-cards #cafirst {
+        margin-top: 5px;
+    }
+
 }
 
-@media (max-width: 568px) {
+/*@media (max-width: 568px) {
     .filtres4 {
         align-items: flex-start;
     }
-}
+}*/
 
-@media (min-width: 767.98px) {
+/*@media (min-width: 767.98px) {
 
     .mmenu1,
     .mmenu2 {
         display: none;
     }
-}
+}*/

@@ -40,7 +40,7 @@
                     <p>En plein centre-ville ou pleine nature</p>
                 </div>
                 <div class="recherche">
-                    <form method="get" action="">
+                    <form method="get" action="#">
                         <i class="fa-solid fa-location-dot"></i>
                         <input type="search" name="recherche" id="recherche" placeholder="Marseille, France">
                         <button type="submit"><span class="loupe"><i class="fa fa-search"></i></span><span
@@ -234,8 +234,11 @@
                             <img src="./images/hebergements/emile-guillemot.jpg"
                                 alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
-                                <div class="card-txt">
-                                    <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                                <div class="card-txt">                                    
+                                        <h3 class="card-title" id="mat1n">Hôtel Le soleil du 
+                                            <p>matin</p> 
+                                        </h3>
+                                                                              
                                     <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
                                 </div>
                                 <div class="card-rating">
@@ -254,7 +257,10 @@
                                 alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
-                                    <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                                    <h3 class="card-title">Chambres d’hôtes Au 
+                                        <p>cœur de l’eau</p>
+
+                                    </h3>
                                     <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
                                 </div>
                                 <div class="card-rating">
@@ -292,10 +298,12 @@
             <div class="activites" id="activites">
                 <section class="activites">
                     <div class="activites-title">
-                        <h2 class="section-title">Activités à Marseille</h2>
+                        <div><h2 class="section-title">Activités à </h2></div>
+                        <div><h2 class="section-title">Marseille</h2></div>
                     </div>
                     <div class="activites-cards">
-                        <article class="card2">
+                        <article class="card2" id="cafirst">
+                            <a href="#"><span class="act"></span></a>
                             <div><img src="./images/activites/reno-laithienne.jpg" alt="Image montrant un port">
                             </div>
                             <div class="activites-card-txt">
@@ -303,6 +311,7 @@
                             </div>
                         </article>
                         <article class="card2">
+                            <a href="#"><span class="act"></span></a>
                             <div><img src="./images/activites/paul-hermann.jpg"
                                     alt="Image montrant une roche et un fort">
                             </div>
@@ -311,6 +320,7 @@
                             </div>
                         </article>
                         <article class="card2">
+                            <a href="#"><span class="act"></span></a>
                             <div><img src="./images/activites/kilyan-sockalingum.jpg"
                                     alt="Image montrant un beau paysage de Calanques">
                             </div>
@@ -319,6 +329,7 @@
                             </div>
                         </article>
                         <article class="card2">
+                            <a href="#"><span class="act"></span></a>
                             <div><img src="./images/activites/florian-wehde.jpg"
                                     alt="Image de la ville montrant Notre-Dame-de-la-Garde">
                             </div>
