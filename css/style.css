@@ -366,6 +366,10 @@ a.fill-div {
     z-index: 1;
 }
 
+.card-txt p {
+    margin: 0;
+}
+
 .populaires {
     width: 32%;
     background-color: var(--main-bg-color);
@@ -457,6 +461,12 @@ a.fill-div {
     left: 0;  
     z-index: 1;    
     background-image: url('empty.gif');
+}
+
+.activites-title {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
 /**** Foooter ******/
@@ -698,7 +708,9 @@ ul {
         display: none;
     }
 
-    .activites-title {
+    .activites-title {        
+        flex-direction: column;
+        gap: 0px; 
         padding-left: 20px;
     }
 
@@ -709,7 +721,7 @@ ul {
     }
 
     .activites-cards .card2 {
-        width: 95%;
+        width: 95%;        
     }
 
     .activites-cards img {
@@ -726,6 +738,10 @@ ul {
         margin-left: 0;
         padding-left: 35px;
         gap: 12px;
+    }
+
+    .activites-cards #cafirst {
+        margin-top: 5px;
     }
 
 }
